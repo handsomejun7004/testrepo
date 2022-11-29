@@ -14,7 +14,7 @@ pipeline {
                 script {
                     try {
                         git branch: 'main',
-                            credentialsId: 'handsomejun7004',
+                            credentialsId: 'aws_token',
                             url: 'https://github.com/handsomejun7004/testrepo'
                         sh "ls -lat"
                         pwd
