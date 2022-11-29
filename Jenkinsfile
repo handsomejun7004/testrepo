@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ECR_PATH = '076508105214.dkr.ecr.ap-northeast-2.amazonaws.com/bastion'
+        ECR_PATH = '076508105214.dkr.ecr.ap-northeast-2.amazonaws.com'
         ECR_IMAGE = 'bastion'
         REGION = 'ap-northeast-2'
         ACCOUNT_ID='076508105214'
