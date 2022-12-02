@@ -14,7 +14,7 @@ pipeline {
                 script {
                     try {
                         git branch: 'main',
-                            credentialsId: '84f16736-af9c-447b-9251-996f3ee43b0a',
+                            credentialsId: 'git',
                             url: 'https://github.com/handsomejun7004/testrepo'
                         sh "ls -lat"
                         pwd
@@ -51,7 +51,7 @@ EOF
         stage('Push to ECR'){
             steps {
               script {
-                docker.withRegistry("https://${ECR_PATH}", "ecr:ap-northeast-2:aws_token") {
+                docker.withRegistry("https://${ECR_PATH}", "ecr:ap-northeast-2:aws_credentials") {
                     def image = docker.build("${ECR_PATH}/${ECR_IMAGE}:${env.BUILD_NUMBER}")
                         image.push()
                 }
