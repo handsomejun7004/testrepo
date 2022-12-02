@@ -7,7 +7,7 @@
  </head>
  <body>
 <h1> Shopping Main Page!! </h1>
-<a href="event"> <img src ="https://blog.kakaocdn.net/dn/dAld8G/btreFRpjGJm/Xsziv9KfQxvV7CtI1CITE1/img.png"> </a><br>
+<a href="event"> <img src ="https://blog.kakaocdn.net/dn/dAld8G/btreFRpjGJm/Xsziv9KfQxvV7CtI1CITE1/img.png" height="400"> </a><br>
 <p>클릭하면 이벤트 페이지로 이동합니다. </p><br>
 <a href="session.jsp">Go Session clustering Test </a><br>
 <a href="db.jsp">DB connection Test</a>
